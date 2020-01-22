@@ -16,12 +16,10 @@ class Post extends CI_Controller {
     public function index() {
         
     }
-    
+
     public function get_post($post_id) {
-        
-      echo $post_id;
-        
+
+        echo $post_id;
     }
-    
 
 }
