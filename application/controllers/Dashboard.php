@@ -43,17 +43,13 @@ class Dashboard extends CI_Controller {
         }
     }
 
-    public function dashboard_new_login() {
-        $this->load->view('dashboard_new/head');
-        $this->load->view('dashboard_new/login');
-        $this->load->view('dashboard_new/footer');
-    }
+
 
     public function user_login_form() {
 
-        $this->load->view('dashboard/dashboard_header');
-        $this->load->view('dashboard/login_page');
-        $this->load->view('dashboard/dashboard_footer');
+        $this->load->view('dashboard_new/head');
+        $this->load->view('dashboard_new/login');
+        $this->load->view('dashboard_new/footer');
     }
 
     public function get_body($param) {

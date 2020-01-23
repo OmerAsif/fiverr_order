@@ -19,6 +19,10 @@ class Post extends CI_Controller {
 
     public function get_post($post_id) {
 
+        $data['cf'] = $this->cf;
+        $this->load->view('test/test_view',$data);
+        $this->load->view('test/test_view_footer');
+        
     }
 
 }
